@@ -5,4 +5,4 @@ D.S. Hirschberg using the algorithms B and C described there.
 
 1. To build use the Makefile: make
 2. Then call ./main
-3. Follow the instructions and type, for example, 'hello' or 'longestcommonsubsequence'.
+3. Follow the instructions and type, for example, 'hello' and 'hallo'.

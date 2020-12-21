@@ -18,12 +18,13 @@ public:
     * @param dimensionTwoSize size of the second dimension
 	  * @return matrix as two dimensional vector matrix 
 	  */
-    static std::vector<std::vector<int>> createMatrix(int dimensionOneSize, int dimensionTwoSize) {
-        std::vector<std::vector<int>> matrix(dimensionOneSize);
+    static std::vector <std::vector<int>> createMatrix(int dimensionOneSize, int dimensionTwoSize) {
+        std::vector <std::vector<int>> matrix(dimensionOneSize);
         for (int vectorDimOne = 0; vectorDimOne < dimensionOneSize; vectorDimOne++) {
             matrix[vectorDimOne] = std::vector<int>(dimensionTwoSize);
         }
         return matrix;
     }
 };
+
 #endif

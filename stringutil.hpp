@@ -9,6 +9,7 @@
 #include <stdexcept>
 #include <cctype>
 #include <algorithm>
+
 /**
 * This headerfile provides some methods to work with wstrings
 */
@@ -43,4 +44,5 @@ public:
         return result;
     }
 };
+
 #endif
