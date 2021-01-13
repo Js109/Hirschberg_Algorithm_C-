@@ -18,9 +18,9 @@ public:
     /**
     * converts the value to a wstring
     *
-	  * @param reference to the object being converted
-	  * @return converted wstring
-	  */
+    * @param reference to the object being converted
+    * @return converted wstring
+    */
     template<typename T>
     static std::wstring toString(const T &object) {
         std::wostringstream ss;
@@ -31,14 +31,14 @@ public:
     /**
     * reverses a word and returns the reversed word
     *
-	  * @param toReverse The word to be reversed
-	  * @return reversed word
-	  */
+    * @param toReverse The word to be reversed
+    * @return reversed word
+    */
     static std::wstring reverseString(const std::wstring &toReverse) {
         std::wstring result = L"";
 
-        for (std::size_t i = 0; i < toReverse.length(); i++) {
-            result = result + StringUtil::toString(toReverse[(toReverse.length() - 1) - i]);
+        for (int i = toReverse.length() - 1; i >= 0; i--) {
+            result = result + StringUtil::toString(toReverse[i]);
         }
 
         return result;
